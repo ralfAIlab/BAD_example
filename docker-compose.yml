@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  app:
+    image: tensorflow/tensorflow:1.15.5-jupyter
+    container_name: badexample
+    ports:
+      - 8888:8888
+    volumes:
+      - "./notebook:/tf/notebooks"
