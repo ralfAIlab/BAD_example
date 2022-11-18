@@ -1,9 +1,11 @@
 version: "3.9"
 services:
   app:
-    image: tensorflow/tensorflow:1.15.5-jupyter
-    container_name: badexample
+    image: pythondebug
+    container_name: pythondebug
     ports:
       - 8888:8888
+      - 5678:5678
     volumes:
       - "./notebook:/tf/notebooks"
+      - "./files:/tf/files"
